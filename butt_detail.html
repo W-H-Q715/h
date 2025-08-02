@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全新料对接管件规格与价格 - 广西伍联管业有限公司</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .butt-detail-table-container {
+      overflow-x: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      margin: 2rem 0;
+      padding: 1rem;
+    }
+
+    .butt-detail-table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 400px;
+    }
+
+    .butt-detail-table th,
+    .butt-detail-table td {
+      border: 1px solid #e1e5e9;
+      padding: 0.25rem 0.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    .butt-detail-table th {
+      background: #222;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .butt-detail-table tr:nth-child(even) {
+      background: #f8f9fa;
+    }
+
+    .butt-detail-table .price {
+      color: #e53935;
+      font-weight: bold;
+    }
+
+    .butt-detail-table .empty {
+      color: #bbb;
+    }
+
+    .butt-detail-title {
+      text-align: center;
+      margin: 2rem 0 1rem 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>广西伍联管业有限公司</h2>
+      </div>
+      <ul class="nav-menu">
+
+        <li class="nav-item"><a href="index.html" class="nav-link">店铺介绍</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link">产品展示</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top:90px;">
+    <div class="container">
+      <div id="butt-detail-title" class="butt-detail-title">全新料对接管件规格与价格</div>
+      <div class="butt-detail-table-container">
+        <table class="butt-detail-table" id="butt-detail-table">
+          <!-- JS填充表格 -->
+        </table>
+      </div>
+      <div style="margin:2rem 0; text-align:center;">
+        <a href="butt.html" class="btn btn-secondary">返回管件小类</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>广西伍联管业有限公司</h3>
+          <p>专业提供PE国标给水管产品和服务</p>
+        </div>
+        <div class="footer-section">
+          <h3>快速链接</h3>
+          <ul>
+
+            <li><a href="index.html">店铺介绍</a></li>
+            <li><a href="login.html">产品展示</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>联系方式</h3>
+          <p>电话：18776354892</p>
+          <p>地址：广西壮族自治区-玉林市-玉州区-一环西路2号</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 广西伍联管业有限公司. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // 对接管件数据（价格已乘2）
+    const buttData = {
+      '等径三通': {
+        title: '等径三通',
+        columns: ['规格', '压力1.0PN', '压力1.25PN', '压力1.6PN', '只/袋', '只/件'],
+        rows: [
+          ['T75', '10.86', '12.66', '14.66', '60', '180'], ['T90', '13.06', '15.46', '17.66', '40', '120'], ['T110', '18.46', '21.86', '25.06', '24', '72'], ['T160', '48.18', '56.18', '64.18', '10', '30'], ['T125', '24.18', '28.18', '32.18', '20', '60'], ['T200', '138.38', '158.38', '178.38', '5', '15'], ['T250', '253.92', '285.92', '317.92', '4', '12'], ['T315', '473.60', '551.60', '629.60', '3', '6']
+        ]
+      },
+      '弯头': {
+        title: '弯头',
+        columns: ['规格', '压力1.0PN', '压力1.25PN', '压力1.6PN', '只/袋', '只/件'],
+        rows: [
+          ['L75', '7.18', '8.18', '9.18', '60', '180'], ['L90', '9.18', '10.18', '11.18', '40', '120'], ['L110', '13.18', '15.18', '17.18', '24', '72'], ['L160', '32.18', '36.18', '40.18', '10', '30'], ['L125', '16.18', '18.18', '20.18', '20', '60'], ['L200', '69.18', '79.18', '89.18', '5', '15'], ['L250', '120.18', '138.18', '156.18', '4', '12'], ['L315', '253.92', '285.92', '317.92', '3', '6']
+        ]
+      },
+      '对接法兰': {
+        title: '对接法兰',
+        columns: ['规格', '压力1.0PN', '压力1.25PN', '压力1.6PN', '只/袋', '只/件'],
+        rows: [
+          ['F90', '7.18', '8.18', '9.18', '60', '180'], ['F110', '9.18', '10.18', '11.18', '40', '120'], ['F125', '13.18', '15.18', '17.18', '24', '72'], ['F160', '32.18', '36.18', '40.18', '10', '30'], ['F200', '69.18', '79.18', '89.18', '5', '15'], ['F250', '120.18', '138.18', '156.18', '4', '12'], ['F315', '253.92', '285.92', '317.92', '3', '6'], ['F400', '240.00', '260.00', '280.00', '2', '4'], ['F500', '427.42', '457.42', '487.42', '1', '2'], ['F630', '427.42', '457.42', '487.42', '1', '2']
+        ]
+      },
+      '45度弯头': {
+        title: '45度弯头',
+        columns: ['规格', '压力1.0PN', '压力1.25PN', '压力1.6PN', '只/袋', '只/件'],
+        rows: [
+          ['L75*45', '5.94', '6.94', '7.94', '60', '180'], ['L90*45', '7.18', '8.18', '9.18', '40', '120'], ['L110*45', '9.18', '10.18', '11.18', '24', '72'], ['L160*45', '16.18', '18.18', '20.18', '10', '30'], ['L125*45', '8.18', '9.18', '10.18', '20', '60'], ['L200*45', '34.18', '38.18', '42.18', '5', '15'], ['L250*45', '79.96', '87.96', '95.96', '4', '12'], ['L315*45', '206.36', '226.36', '246.36', '3', '6'], ['L400*45', '260.36', '280.36', '300.36', '2', '4']
+        ]
+      },
+      '异径三通': {
+        title: '异径三通',
+        columns: ['规格', '压力1.0PN', '压力1.25PN', '压力1.6PN', '只/袋', '只/件'],
+        rows: [
+          ['T75*63', '3.58', '4.18', '4.78', '60', '180'], ['T90*63', '5.34', '6.34', '7.34', '40', '120'], ['T90*75', '5.34', '6.34', '7.34', '40', '120'], ['T110*75', '7.34', '8.34', '9.34', '24', '72'], ['T110*90', '7.34', '8.34', '9.34', '24', '72'], ['T125*90', '8.34', '9.34', '10.34', '20', '60'], ['T125*110', '8.34', '9.34', '10.34', '20', '60'], ['T160*110', '12.34', '13.34', '14.34', '10', '30'], ['T160*125', '12.34', '13.34', '14.34', '10', '30'], ['T200*110', '18.34', '19.34', '20.34', '5', '15'], ['T200*160', '18.34', '19.34', '20.34', '5', '15'], ['T250*160', '29.34', '31.34', '33.34', '4', '12'], ['T315*250', '95.86', '105.86', '115.86', '3', '6'], ['T400*315', '382.32', '402.32', '422.32', '1', '2']
+        ]
+      },
+      '异径直接': {
+        title: '异径直接',
+        columns: ['规格', '压力1.0PN', '压力1.25PN', '压力1.6PN', '只/袋', '只/件'],
+        rows: [
+          ['S75*63', '3.58', '4.18', '4.78', '210', '630'], ['S90*75', '5.34', '6.34', '7.34', '60', '180'], ['S110*90', '7.34', '8.34', '9.34', '60', '180'], ['S160*90', '8.34', '9.34', '10.34', '60', '180'], ['S160*125', '8.34', '9.34', '10.34', '60', '180'], ['S200*160', '12.34', '13.34', '14.34', '27', '81'], ['S250*200', '24.34', '25.34', '26.34', '18', '54'], ['S315*250', '43.51', '46.38', '49.26', '12', '36']
+        ]
+      },
+      '管帽': {
+        title: '管帽',
+        columns: ['规格', '价格(元/只)', '只/袋', '只/件'],
+        rows: [
+          ['D75', '7.18', '60', '180'], ['D90', '9.18', '40', '120'], ['D110', '13.18', '24', '72'], ['D160', '32.18', '10', '30'], ['D200', '69.18', '5', '15'], ['D315', '87.02', '3', '9']
+        ]
+      }
+    };
+    // 获取type参数
+    function getQueryParam(name) {
+      const url = window.location.search;
+      const params = new URLSearchParams(url);
+      return params.get(name);
+    }
+    function renderTable(type) {
+      const data = buttData[type] || buttData['等径三通'];
+      document.getElementById('butt-detail-title').innerText = data.title + ' 规格与价格';
+      let html = '<thead><tr>';
+      data.columns.forEach(col => html += `<th>${col}</th>`);
+      html += '</tr></thead><tbody>';
+      data.rows.forEach(row => {
+        html += '<tr>';
+        row.forEach((cell, idx) => {
+          if ((idx === 1 || idx === 2 || idx === 3) && cell) html += `<td class="price">${cell}</td>`;
+          else if ((idx === 1 || idx === 2 || idx === 3) && !cell) html += `<td class="empty">—</td>`;
+          else html += `<td>${cell}</td>`;
+        });
+        html += '</tr>';
+      });
+      html += '</tbody>';
+      document.getElementById('butt-detail-table').innerHTML = html;
+    }
+    const type = getQueryParam('type');
+    renderTable(type);
+  </script>
+</body>
+
+</html>

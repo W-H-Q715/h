@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POM速接管件 - 广西伍联管业有限公司</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .pom-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .pom-type-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 2rem 1rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .pom-type-card:hover {
+      transform: translateY(-5px) scale(1.03);
+    }
+
+    .pom-type-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .pom-type-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .pom-type-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #667eea;
+      text-decoration: underline;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>广西伍联管业有限公司</h2>
+      </div>
+      <ul class="nav-menu">
+
+        <li class="nav-item"><a href="index.html" class="nav-link">店铺介绍</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link">产品展示</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main style="margin-top:90px;">
+    <div class="container">
+      <h1 class="section-title">POM速接管件类型</h1>
+      <div class="pom-types-grid">
+        <div class="pom-type-card">
+          <img src="img/pom-zhijie.png" alt="速接直接" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接直接</div>
+          <a href="pom_detail.html?type=速接直接" class="pom-type-link">查看规格与价格</a>
+        </div>
+        <div class="pom-type-card">
+          <img src="img/pom-zhijieyijing.png" alt="速接异径直通" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接异径直通</div>
+          <a href="pom_detail.html?type=速接异径直通" class="pom-type-link">查看规格与价格</a>
+        </div>
+        <div class="pom-type-card">
+          <img src="img/pom-wantou.png" alt="速接弯头" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接弯头</div>
+          <a href="pom_detail.html?type=速接弯头" class="pom-type-link">查看规格与价格</a>
+        </div>
+        <div class="pom-type-card">
+          <img src="img/pom-santong.png" alt="速接三通" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接三通</div>
+          <a href="pom_detail.html?type=速接三通" class="pom-type-link">查看规格与价格</a>
+        </div>
+        <div class="pom-type-card">
+          <img src="img/pom-yijingsantong.png" alt="速接异径三通" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接异径三通</div>
+          <a href="pom_detail.html?type=速接异径三通" class="pom-type-link">查看规格与价格</a>
+        </div>
+        <div class="pom-type-card">
+          <img src="img/pom-famen.png" alt="速接阀门" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接阀门</div>
+          <a href="pom_detail.html?type=速接阀门" class="pom-type-link">查看规格与价格</a>
+        </div>
+        <div class="pom-type-card">
+          <img src="img/pom-naiwai.png" alt="速接内外丝直通" class="pom-type-img previewable" />
+          <div class="pom-type-title">速接内外丝直通</div>
+          <a href="pom_detail.html?type=速接内外丝直通" class="pom-type-link">查看规格与价格</a>
+        </div>
+      </div>
+      <div style="margin:2rem 0; text-align:center;">
+        <a href="login.html" class="btn btn-secondary">返回产品展示</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>广西伍联管业有限公司</h3>
+          <p>专业提供PE国标给水管产品和服务</p>
+        </div>
+        <div class="footer-section">
+          <h3>快速链接</h3>
+          <ul>
+
+            <li><a href="index.html">店铺介绍</a></li>
+            <li><a href="login.html">产品展示</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>联系方式</h3>
+          <p>电话：18776354892</p>
+          <p>地址：广西壮族自治区-玉林市-玉州区-一环西路2号</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 广西伍联管业有限公司. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+  <div id="img-modal"
+    style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;">
+    <img id="img-modal-img" src="" alt="大图预览"
+      style="max-width:90vw;max-height:90vh;border-radius:10px;box-shadow:0 8px 32px #0008;" />
+  </div>
+  <script>
+    // 图片点击放大预览
+    document.querySelectorAll('.previewable').forEach(img => {
+      img.addEventListener('click', function (e) {
+        document.getElementById('img-modal-img').src = this.src;
+        document.getElementById('img-modal').style.display = 'flex';
+      });
+    });
+    document.getElementById('img-modal').addEventListener('click', function (e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>
